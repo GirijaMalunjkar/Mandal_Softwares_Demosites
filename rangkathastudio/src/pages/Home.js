@@ -1,10 +1,10 @@
 import React from "react";
 import About from "./About";
+import Services from "./Services";
 import Testimonial from "./Testimonial";
 import ContactForm from "./Contact";
-import "./Style.css"
 
-export function Clients() {
+export function Home() {
     return (
         <>
             <section id="portfolioHeader">
@@ -16,9 +16,10 @@ export function Clients() {
                 </div>
             </section>
             <About />
+            <Services />
             <Testimonial />
             <ContactForm />
         </>
     )
 }
-export default Clients;
+export default Home;

@@ -1,0 +1,19 @@
+.footer {
+    height: 90px;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer-Icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+}

@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './component/pages/Navbar';
-import Weddings from './component/pages/Wedding';
-import Preweddings from './component/pages/Prewedding';
-import Portraits from './component/pages/Portrait';
-import Home from './component/pages/Home';
-import Maternity from './component/pages/Maternity';
-import About from './component/pages/About';
-import Contact from './component/pages/Contact';
+import Navbar from './pages/Navbar';
+import Weddings from './pages/Wedding';
+import Preweddings from './pages/Prewedding';
+import Portraits from './pages/Portrait';
+import Home from './pages/Home';
+import Maternity from './pages/Maternity';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import { Routes, Route } from 'react-router-dom';
-import Footer from './component/pages/footer';
-import Babyshoot from './component/pages/Babyshoot';
-import Testimonial from './component/pages/Testimonial';
-import ContactModal from './component/pages/Contactmodal';
+import Footer from './pages/footer';
+import Babyshoot from './pages/Babyshoot';
+import Testimonial from './pages/Testimonial';
+import ContactModal from './pages/Contactmodal';
+import Services from './pages/Services';
 // import { useInView, InView } from 'react-intersection-observer';
 
 
@@ -65,6 +66,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/About' element={<About />} />
+					<Route path='/Services' element={<Services />} />
 					<Route path='/Babyshoot' element={<Babyshoot />} />
 					<Route path='/Wedding' element={<Weddings />} />
 					<Route path='/Prewedding' element={<Preweddings />} />

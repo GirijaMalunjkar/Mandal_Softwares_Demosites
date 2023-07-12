@@ -1,5 +1,5 @@
 import React from "react";
-import "./Style.css"
+import '../assets/css/testimonial.css';
 
 function Testimonial() {
   return (
@@ -30,7 +30,6 @@ function Testimonial() {
                 <p>"Aniket is so welcoming and a true artist. He has captured some of those most precious times in my life and I truly cherish photos from our maternity and newborn shoot. I can’t recommend Aniket enough!"</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>

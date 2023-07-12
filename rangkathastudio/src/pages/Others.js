@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Style.css"
+import '../assets/css/gallery.css';   
 
 import CloseIcon from '@mui/icons-material/Close';
 

@@ -1,17 +1,17 @@
 import React from 'react';
-import "./Style.css"
+import '../assets/css/contact.css';   
 
 function ContactForm() {
   return (
     <>
 
-      <section id='contact' className='container-wrapper'>
+      {/* <section id='contact' className='container-wrapper'>
         <div className='content'>
           <h2>Contact Us</h2>
           <p>रंगकथा Studio
             Photographer
             New Born | Maternity | Kids | Portrait
-            Makeup ~ costume ~ Photo
+            Makeup ~ costume ~ Photo<br/>
             Founder~@aniket_kadlak_photography_
             Dm For Bookings And Enquiries </p>
         </div>
@@ -67,7 +67,7 @@ function ContactForm() {
           </div>
         </div>
 
-      </section>
+      </section> */}
 
     </>
   );

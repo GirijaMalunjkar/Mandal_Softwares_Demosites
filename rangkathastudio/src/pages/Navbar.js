@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
-import './Style.css';
+import '../assets/css/nav.css';   
 import $ from 'jquery'; // Import jQuery if not already imported
 
 export default function Navbar() {
@@ -38,7 +38,7 @@ export default function Navbar() {
             <section className="navigation">
                 <div className="nav-container">
                     <div className="brand">
-                        <Link to="./"><img className='site-logo' src='images/logos/Rangkatha1.webp' alt='' /></Link>
+                        <Link to="./"><img className='site-logo' src={require("../assets/images/logos/Rangkatha1.webp")} alt='Rangkatha1.webp' /></Link>
                     </div>
                     <nav>
                         <div className="nav-mobile">
