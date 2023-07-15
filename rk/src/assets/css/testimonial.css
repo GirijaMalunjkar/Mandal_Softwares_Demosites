@@ -74,7 +74,7 @@ body {
 }
 
 .testim .arrow:hover {
-  color: green;
+  color: #ff004f;
 }
   
 
@@ -103,7 +103,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid green;
+  border: 1px solid #ff004f;
   margin: 0 10px;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;    
@@ -116,8 +116,8 @@ body {
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-  background: green;
-  border-color: green;
+  background: #ff004f;
+  border-color: #ff004f;
 }
 
 .testim .dots .dot.active {
@@ -162,7 +162,7 @@ body {
 }
 
 .testim .cont div h2 {
-  color: green;
+  color: #ff004f;
   font-size: 1em;
   margin: 15px 0;
 }

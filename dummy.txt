@@ -1,40 +1,473 @@
-import React from "react";
-import '../assets/css/testimonial.css';
+h1{
+  margin-bottom: 20px;
+  color:#ff004f;
+}
+.contact-container {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-color);
+  transition: all 0.3s ease-in-out;
 
-function Testimonial() {
+}
+
+.left-col {
+  width: 50vw;
+  height: 100%;
+  background-image: url("../images/Wedding/wedding21.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.logo {
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+.right-col {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  padding: 0px 35px;
+  z-index: 300;
+  background: black;
+  /* background-image: url('../img/bgimg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+}
+/* 
+.right-col::before {
+  z-index: 11;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: #00000096;
+  backdrop-filter: blur(1px) ;
+} */
+.formbold-mb-5 {
+  margin-bottom: 10px;
+}
+.formbold-pt-3 {
+  padding-top: 10px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  background: white;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff004f;
+  margin-bottom: 5px;
+}
+.formbold-form-label-2 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 5px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 300;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #ff004f;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  border: none;
+  font-weight: 600;
+  background-color: #ff004f;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+/* Toggle Switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+}
+
+.description {
+    margin-left: 1.25rem;
+  }
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 0.25rem;
+  position: absolute;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--button-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#error, #success-msg {
+  width: 40vw;
+  margin: 0.125rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  }
+  
+  #success-msg {
+  transition-delay: 3s;
+  }
+
+@media only screen and (max-width: 950px) {
+  .logo {
+    width: 8rem;
+  }
+    input, textarea, button {
+    font-size: 0.65rem;
+  }
+  .description {
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+  }
+  button {
+    width: 7rem;
+  }
+  .theme-switch-wrapper {
+    width: 120px;
+  }
+  .theme-switch {
+  height: 28px;
+  width: 50px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0.25rem;
+  position: absolute;
+  transition: .4s;
+}
+  input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 15px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+}
+
+
+==========================================================================================================
+
+import React, { useState } from 'react';
+import "../assets/css/contact.css";
+
+  function ContactPage() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
+   const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    date: '',
+    time: '',
+    area: '',
+    city: '',
+    state: '',
+    pinCode: '',
+     gender: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   return (
-    <div>
-      <div className="testimonials">
-        <div className="inner">
-          <h1>Testimonials</h1>
-          <div className="border"></div>
+    <div className={`contact-container`}>
 
-          <div className="testirow">
-            <div className="testicol">
-              <div className="testimonial">
-                <div className="name"> Paras B</div>
-                <p>"Highly recommend !! I just received my pregnancy photos from rang katha studio and I am beyond happy with how they turned out .He was extremely professional and made my husband and I feel very comfortable .I can't wait to return for my newton photos once baby arrives!!"</p>
-              </div>
+      <div className="left-col">
+        <img className='site-logo' src={require("../assets/images/logos/Rangkatha1.webp")} alt='Rangkatha1.webp' />
+      </div>
+      <div className="right-col">
+      <div className="bg-image"></div>
+
+      <div className="inner" style={{zIndex: 12, position: 'relative'}}>
+          <h1>Registration</h1>
+          </div>
+          <form onSubmit={handleSubmit} style={{zIndex: 12, position: 'relative'}}>
+          <div className="formbold-mb-5">
+            <label htmlFor="name" className="formbold-form-label">
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              className="formbold-form-input"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="formbold-mb-5">
+            <label htmlFor="phone" className="formbold-form-label">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+              className="formbold-form-input"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="formbold-mb-5">
+            <label htmlFor="email" className="formbold-form-label">
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              className="formbold-form-input"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="formbold-mb-5">
+            <label className="formbold-form-label">Gender</label>
+            <div className="formbold-form-input">
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  checked={formData.gender === 'male'}
+                  onChange={handleChange}
+                />{' '}
+                Male
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  checked={formData.gender === 'female'}
+                  onChange={handleChange}
+                />{' '}
+                Female
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="other"
+                  checked={formData.gender === 'other'}
+                  onChange={handleChange}
+                />{' '}
+                Other
+              </label>
             </div>
+          </div>
 
-            <div className="testicol">
-              <div className="testimonial">
-                <div className="name">Akshay G</div>
-                <p>"Aniket is the photographer I’ve been searching for. He is warm, open-minded, creative, and very skilled at capturing beautiful images. I was very comfortable sharing my ideals with him and my photo session was a fun experience that remains a fond memory.thank you so much 🥰 "</p>
+
+          <div className="formbold-mb-5 formbold-pt-3">
+            <label className="formbold-form-label formbold-form-label-2">
+              Address Details
+            </label>
+            <div className="flex flex-wrap formbold--mx-3">
+              <div className="w-full sm:w-half formbold-px-3">
+                <div className="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="area"
+                    id="area"
+                    placeholder="Enter area"
+                    className="formbold-form-input"
+                    value={formData.area}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
-            </div>
-
-            <div className="testicol">
-              <div className="testimonial">
-                <div className="name">Ravan Y</div>
-                <p>"Aniket is so welcoming and a true artist. He has captured some of those most precious times in my life and I truly cherish photos from our maternity and newborn shoot. I can’t recommend Aniket enough!"</p>
+              <div className="w-full sm:w-half formbold-px-3">
+                <div className="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder="Enter city"
+                    className="formbold-form-input"
+                    value={formData.city}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="w-full sm:w-half formbold-px-3">
+                <div className="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    placeholder="Enter state"
+                    className="formbold-form-input"
+                    value={formData.state}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <div className="w-full sm:w-half formbold-px-3">
+                <div className="formbold-mb-5">
+                  <input
+                    type="text"
+                    name="pinCode"
+                    id="post-code"
+                    placeholder="Post Code"
+                    className="formbold-form-input"
+                    value={formData.pinCode}
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
             </div>
           </div>
+
+          <div>
+            <button type="submit" className="formbold-btn">
+              Register
+            </button>
+          </div>
+        </form>
+      
+        <div id="error">{errorMessage}</div>
+        <div id="success-msg">{successMessage}</div>
         </div>
-      </div>
+            
     </div>
   );
 }
 
-export default Testimonial;
+export default ContactPage;
