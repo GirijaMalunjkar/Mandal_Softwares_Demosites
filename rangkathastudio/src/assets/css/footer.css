@@ -1,19 +1,110 @@
-.footer {
-    height: 90px;
-    background-color: black;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 0.8rem;
+.footer-main{
+    padding-top: 90px;
 }
 
-.footer-Icon {
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    color: black;
+.address-main > div.col-lg-4 {
+    border-bottom: dotted 1px #999;
+}
+.address-box {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.add-icon{
+    float: left;
+    width: 60px;
+    display: inline-block;
+    padding: 0px 5px;
+}
+.address-box .add-icon {
+    background: #27303b;
+    height: 75px;
+    line-height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    text-align: center;
+}
+.add-icon img{
+    width: 100%;
+}
+.address-box .add-icon img {
+    max-width: 40px;
+}
+.add-content{
+    padding-left: 70px;
+}
+.add-content h5 {
+    font-size: 17px;
+    color: #ffffff;
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.add-content p {
+    font-size: 13px;
+    color: #999999;
+    font-weight: 300;
+}
+.add-content p a{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.add-content p a:hover{
+    color: #ffb32d;
+}
+.footer-main{
+    padding-top: 90px;
+}
+
+.address-main > div.col-lg-4 {
+    border-bottom: dotted 1px #999;
+}
+.address-box {
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.add-icon{
+    float: left;
+    width: 60px;
+    display: inline-block;
+    padding: 0px 5px;
+}
+.address-box .add-icon {
+    background: #27303b;
+    height: 75px;
+    line-height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    text-align: center;
+}
+.add-icon img{
+    width: 100%;
+}
+.address-box .add-icon img {
+    max-width: 40px;
+}
+.add-content{
+    padding-left: 70px;
+}
+.add-content h5 {
+    font-size: 17px;
+    color: #ffffff;
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.add-content p {
+    font-size: 13px;
+    color: #999999;
+    font-weight: 300;
+}
+.add-content p a{
+    font-size: 14px;
+    color: #999999;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.add-content p a:hover{
+    color: #ffb32d;
 }

@@ -11,7 +11,6 @@ import { Routes, Route } from 'react-router-dom';
 import Footer from './pages/footer';
 import Babyshoot from './pages/Babyshoot';
 import Testimonial from './pages/Testimonial';
-import ContactModal from './pages/Contactmodal';
 import Services from './pages/Services';
 // import { useInView, InView } from 'react-intersection-observer';
 
@@ -20,27 +19,6 @@ function App() {
 
 
 	const [modalVisible, setmodalVisible] = useState(false);
-
-	// const { ref, inView } = useInView({ triggerOnce: true, delay: 2000 })
-
-	// useEffect(() => {
-
-	//     if (inView) {
-	//         setmodalVisible(true)
-	//         console.log("YES")
-	//     } else {
-	//         console.log("NO")
-	//     }
-
-	// }, [inView])
-
-
-	// useEffect(() => {
-	//     window.scrollTo({
-	//         top: 0,
-	//         behavior: "smooth",
-	//     });
-	// }, [])
 
 	const handleScroll = () => {
 		const position = window.pageYOffset;
@@ -76,13 +54,7 @@ function App() {
 					<Route path='/Contact' element={<Contact />} />
 				</Routes>
 			</div>
-			<ContactModal
-				isOpen={modalVisible}
-				setmodalVisible={setmodalVisible}
-			/>
-			<Footer
-			//   refProp={ref}
-			/>
+			<Footer/>
 		</>
 	);
 }

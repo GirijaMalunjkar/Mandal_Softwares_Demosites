@@ -6,7 +6,6 @@ import { faFacebook, faLinkedin, faInstagram, faYoutube } from '@fortawesome/fre
 function Social() {
   return (
     <div>
-      <h1>Follow us</h1>
       <div className="Social-media">
         <a href="#"><FontAwesomeIcon icon={faFacebook} color="white" /></a>
         <a href="#"><FontAwesomeIcon icon={faLinkedin} color="white" /></a>

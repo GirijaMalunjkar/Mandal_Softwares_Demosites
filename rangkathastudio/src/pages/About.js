@@ -11,27 +11,26 @@ const DigitalUpgrade = () => {
         </div>
         <div className="about-us-info">
         <div className="tab-content">
-                  <ul>
-                    <li><span>CANDID</span><br />A Photograph Captured Without Creating A Posed Appearance</li>
-                    <li><span>PORTRAIT</span><br />a type of photography aimed toward capturing the personality of a person or <br />group of people by using effective lighting, backdrops, and poses.</li>
-                    <li><span>LANDSCAPE</span><br />shows the spaces within the world, sometimes vast and unending, but other times microscopic.</li>
-                  </ul>
+        <h2>About Me</h2>
+
+<p>We are specialised in newborn kids family shoot  and maternity shoot open travelling to destination  to capture the perfect moments from perfect time and place. We guarantee to be there for your every special moment to be capture for all the time. To us photography is to capture emotions  and special movements to remember forever.
+This can be said as part of story that matters most : real story,real peoples,real moments.
+Photos and videos with full of memories are the best way to describe our story And that can be very helpful to convey our story.</p>
                 </div>
           <a href="#" title="About Us Button">ABOUT US</a>
         </div>
       </div>
       <div id="history-section">
         <div className="history-image">
-          <img src={require('../assets/img/about-1.png')} width="951" height="471" alt="About-2" />
+          <img src={require('../assets/img/about-2.png')} width="951" height="471" alt="About-2" />
         </div>
         <div className="history-info">
           <h2>Preserving Local History</h2>
           <p>
           Aniket Kadlak, the visionary founder of Rangkatha Photo Studio, embarked on his creative journey in 2018, blending his passion for storytelling and photography to capture timeless moments that unfold vibrant narratives.
           </p>
-          {/* <a href="#" title="History Button">HISTORY</a> */}
-          <div>
-      <Social/>
+          <div className='socialmedia'>
+          <Social/>
     </div>
         </div>
       </div>

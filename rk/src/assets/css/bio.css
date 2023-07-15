@@ -1,0 +1,30 @@
+.Bio {
+    background: gray;
+    font-family: 'Alkatra', cursive;
+    font-size: 23px;
+}
+
+.BioImg {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: 39%;
+    margin-right: 50%;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.biop {
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    text-align: justify;
+}
+
+.bioiframe {
+    width: 600px;
+    height: 400px;
+    border: 1px solid gray;
+}

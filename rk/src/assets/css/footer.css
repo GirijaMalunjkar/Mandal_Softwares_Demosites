@@ -1,0 +1,39 @@
+/* Footer styles */
+footer {
+    background-color: #262626;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    margin: 0 auto;
+    color:  white;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
