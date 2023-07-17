@@ -30,7 +30,7 @@
     padding: 10px 10%;
     position: relative;
     z-index: 5;
-}
+  }
 
 .headerText {
     margin-top: 20%;
@@ -38,8 +38,9 @@
 }
 
 .headerText h1 {
-    font-size: 60px;
+    font-size: 130px;
     margin-top: 20px;
+    
 }
 
 .headerText h1 span {

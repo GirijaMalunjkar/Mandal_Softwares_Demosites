@@ -12,6 +12,7 @@ import Footer from './pages/footer';
 import Babyshoot from './pages/Babyshoot';
 import Testimonial from './pages/Testimonial';
 import Services from './pages/Services';
+import Packages from './pages/Package';
 // import { useInView, InView } from 'react-intersection-observer';
 
 
@@ -32,6 +33,7 @@ function App() {
 					<Route path='/Maternity' element={<Maternity />} />
 					<Route path='/Testimonial' element={<Testimonial />} />
 					<Route path='/Contact' element={<Contact />} />
+					<Route path='/Packages' element={<Packages />} />
 				</Routes>
 			</div>
 			<Footer/>

@@ -43,12 +43,10 @@ function ContactPage() {
   return (
     <div className="c_container">
       <div className="card">
-        <div className="left">
-          <img src={require("../assets/images/Wedding/wedding21.webp")} alt="Background" />
-        </div>
+        {/* <div className="left">
+          <img src={require("../assets/img/contact-2.jpg")} alt="Background" />
+        </div> */}
         <div className="right-col">
-          <div className="bg-image"></div>
-
           <div className="inner" style={{ zIndex: 12, position: 'relative' }}>
             <h1>Registration</h1>
           </div>
@@ -95,27 +93,63 @@ function ContactPage() {
                 onChange={handleChange}
               />
             </div>
+            
             <div className="formbold-mb-5">
-            <label htmlFor="gender" className="formbold-form-label">
-            <p>Select your gender:</p>
+              <label htmlFor="age" className="formbold-form-label">
+                Age
               </label>
-              <label htmlFor="male" className="formbold-form-label">
-                    <input type="radio" value="male" checked={gender === 'male'} onChange={handleGenderChange} />
-                    Male
-                  </label>
-                  <label htmlFor="female" className="formbold-form-label">
-                    <input type="radio" value="female" checked={gender === 'female'} onChange={handleGenderChange} />
-                    Female
-                  </label>
-              {/* <input
-                type="gender"
-                name="email"
-                id="email"
-                placeholder="gender"
+
+              <input
+                type="age"
+                name="age"
+                id="age"
+                min="1"
+                max="120"
+                placeholder="Enter your Age"
                 className="formbold-form-input"
                 value={formData.email}
                 onChange={handleChange}
-              /> */}
+                required
+              />
+            </div>
+            <div className="formbold-mb-5 formbold-pt-3">
+              <label className="formbold-form-label formbold-form-label-2">
+                Select Your Gender
+              </label>
+              <div className="flex flex-wrap formbold--mx-3">
+                <div className="w-full sm:w-half formbold-px-3">
+                  <div className="formbold-mb-5">
+                    <label htmlFor="male" className="formbold-form-label">
+                      <input type="radio" value="male" checked={gender === 'male'} onChange={handleGenderChange} />
+                      Male
+                    </label>
+                    <label htmlFor="female" className="formbold-form-label">
+                      <input type="radio" value="female" checked={gender === 'female'} onChange={handleGenderChange} />
+                      Female
+                    </label>
+                  </div>
+                </div>
+                <div className="w-full sm:w-half formbold-px-3">
+                  <label htmlFor="age" className="formbold-form-label">
+                    Age
+                  </label>
+                  <div className="formbold-mb-5">
+                    <input
+                      type="age"
+                      name="age"
+                      id="age"
+                      min="1"
+                      max="120"
+                      placeholder="Enter your Age"
+                      className="formbold-form-input"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <div className="formbold-mb-5 formbold-pt-3">
@@ -178,10 +212,63 @@ function ContactPage() {
               </div>
             </div>
 
+
+            <div className="formbold-mb-5 formbold-pt-3">
+              
+              <div className="flex flex-wrap formbold--mx-3">
+              <div className="w-full sm:w-half formbold-px-3">
+              <label htmlFor="photoshoot" className="formbold-form-label">
+            <p>Type of photoshoot  they want </p>
+              </label>
+                  <div className="formbold-mb-5">
+                  <label htmlFor="NewBorn" className="formbold-form-label">
+                    <input type="checkbox" value="NewBorn" onChange={handleGenderChange} />
+                    NewBorn 
+                  </label>
+                  <label htmlFor="Maternity" className="formbold-form-label">
+                    <input type="checkbox" value="Maternity" onChange={handleGenderChange} />
+                    Maternity 
+                  </label>
+                  <label htmlFor="Kids" className="formbold-form-label">
+                    <input type="checkbox" value="Kids" onChange={handleGenderChange} />
+                    Kids  
+                  </label>
+                  <label htmlFor="Other" className="formbold-form-label">
+                    <input type="checkbox" value="Other" onChange={handleGenderChange} />
+                    Other   
+                  </label>
+                  </div>
+                </div>
+                <div className="w-full sm:w-half formbold-px-3">
+                <label htmlFor="package" className="formbold-form-label">
+            <p>Type of package they would prefer to buy </p>
+              </label>
+                  <div className="formbold-mb-5">
+                  <label htmlFor="Bronze" className="formbold-form-label">
+                    <input type="checkbox" value="Bronze" onChange={handleGenderChange} />
+                    Bronze  
+                  </label>
+                  <label htmlFor="Silver" className="formbold-form-label">
+                    <input type="checkbox" value="Silver" onChange={handleGenderChange} />
+                    Silver  
+                  </label>
+                  <label htmlFor="Gold" className="formbold-form-label">
+                    <input type="checkbox" value="Gold" onChange={handleGenderChange} />
+                    Gold   
+                  </label>
+                  <label htmlFor="Diamond" className="formbold-form-label">
+                    <input type="checkbox" value="Diamond" onChange={handleGenderChange} />
+                    Diamond   
+                  </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             <div>
-            <div className="usersubmit">
-          <input type="submit" value="Register" />
-        </div>
+              <div className="usersubmit">
+                <input type="submit" value="Register" />
+              </div>
             </div>
           </form>
 

@@ -4,23 +4,65 @@
   display: flex;
   align-items: center;
   justify-content: center;
-/* background-image: url('../img/bgimg.jpg');
+  background-image: url('../images/Wedding/wedding21.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #00000096;
-  /* backdrop-filter: blur(1px) ; */
+  backdrop-filter: blur(1px) ;
+}
+
+.c_container::before {
+  z-index: 4;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: #00000096;
 }
 
 .card {
+  float: left;
+  width: 700px;
+  height: 500px;
+  overflow-y: scroll;
   background-color: #2d2d2da4;
   border-radius: 5px;
   display: flex;
   justify-content: center;
+  z-index: 12;
 }
 
-.left {
-  width: 30vw;
+.card::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.card::-webkit-scrollbar-thumb:hover {
+  background-color: #2d2d2da4;
+}
+
+.card::-webkit-scrollbar-track {
+  background-color: #2d2d2da4;
+}
+
+/* Hide scrollbar for other browsers */
+/* .card {
+  scrollbar-width: none; 
+} */
+
+/* .card::-webkit-scrollbar {
+  display: none; 
+} */
+
+/* .left {
+  width: 45vw;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -29,27 +71,29 @@
   width: inherit;
   object-fit: cover;
   transform: scale(2.3);
-}
+} */
 
 
-h1{
-  margin-bottom: 20px;
-  color:#ff004f;
+h1 {
+  margin: 20px;
 }
+
 .right-col {
   position: relative;
   width: 50vw;
   height: 100vh;
   padding: 0px 35px;
   z-index: 300;
-  }
+}
 
-  .formbold-mb-5 {
+.formbold-mb-5 {
   margin-bottom: 10px;
 }
+
 .formbold-pt-3 {
   padding-top: 10px;
 }
+
 .formbold-main-wrapper {
   display: flex;
   align-items: center;
@@ -63,6 +107,7 @@ h1{
   width: 100%;
   background: white;
 }
+
 .formbold-form-label {
   display: block;
   font-weight: 500;
@@ -70,6 +115,7 @@ h1{
   color: #ff004f;
   margin-bottom: 5px;
 }
+
 .formbold-form-label-2 {
   font-weight: 500;
   font-size: 16px;
@@ -88,6 +134,7 @@ h1{
   outline: none;
   resize: none;
 }
+
 .formbold-form-input:focus {
   border-color: #ff004f;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
@@ -106,6 +153,7 @@ h1{
   width: 100%;
   cursor: pointer;
 }
+
 .formbold-btn:hover {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
@@ -114,19 +162,24 @@ h1{
   margin-left: -12px;
   margin-right: -12px;
 }
+
 .formbold-px-3 {
   padding-left: 12px;
   padding-right: 12px;
 }
+
 .flex {
   display: flex;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 .w-full {
   width: 100%;
 }
+
 @media (min-width: 540px) {
   .sm\:w-half {
     width: 50%;
@@ -146,8 +199,8 @@ h1{
 }
 
 .description {
-    margin-left: 1.25rem;
-  }
+  margin-left: 1.25rem;
+}
 
 .theme-switch {
   display: inline-block;
@@ -157,7 +210,7 @@ h1{
 }
 
 .theme-switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -182,11 +235,11 @@ h1{
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: var(--button-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
 
@@ -198,65 +251,74 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#error, #success-msg {
+#error,
+#success-msg {
   width: 40vw;
   margin: 0.125rem 0;
   font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--secondary-color);
-  }
-  
-  #success-msg {
+}
+
+#success-msg {
   transition-delay: 3s;
-  }
+}
 
 @media only screen and (max-width: 950px) {
   .logo {
     width: 8rem;
   }
-    input, textarea, button {
+
+  input,
+  textarea,
+  button {
     font-size: 0.65rem;
   }
+
   .description {
     font-size: 0.3rem;
     margin-left: 0.4rem;
   }
+
   button {
     width: 7rem;
   }
+
   .theme-switch-wrapper {
     width: 120px;
   }
+
   .theme-switch {
-  height: 28px;
-  width: 50px;
-}
+    height: 28px;
+    width: 50px;
+  }
 
-.theme-switch input {
-  display:none;
-}
+  .theme-switch input {
+    display: none;
+  }
 
-.slider:before {
-  background-color: #fff;
-  bottom: 0.25rem;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 0.25rem;
-  position: absolute;
-  transition: .4s;
-}
-  input:checked + .slider:before {
-  transform: translateX(16px);
-}
+  .slider:before {
+    background-color: #fff;
+    bottom: 0.25rem;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 0.25rem;
+    position: absolute;
+    transition: .4s;
+  }
 
-.slider.round {
-  border-radius: 15px;
-}
+  input:checked+.slider:before {
+    transform: translateX(16px);
+  }
 
-.slider.round:before {
-  border-radius: 50%;
-}
+  .slider.round {
+    border-radius: 15px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 }
 
@@ -268,7 +330,7 @@ input:checked + .slider:before {
   border: none;
   width: min-content;
   padding: 15px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: 0.3s;
 }
