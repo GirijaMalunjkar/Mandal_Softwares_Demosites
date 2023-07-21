@@ -73,21 +73,21 @@ export default function Navbar() {
                                     <li>
                                         <Link to="./Babyshoot">BABY SHOOT</Link>
                                     </li>
-
-
-
                                 </ul>
                             </li>
                             <li>
                                 <Link to="./Testimonial">TESTIMONIALS</Link>
                             </li>
                             <li>
-                                <Link to="./Contact">CONTACT US</Link>
+                                
+                               <Link to="./Contact"><button class="button-34"  role="button">Registration</button></Link>
+
                             </li>
 
 
                         </ul>
                     </nav>
+                    
                 </div>
             </section>
             {/* 

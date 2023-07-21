@@ -18,9 +18,9 @@ export function Home() {
             </section>
             <About />
             <Services />
-            <Testimonial />
             <Packages />
-            <ContactForm />
+            <Testimonial />
+            {/* <ContactForm /> */}
         </>
     )
 }

@@ -35,7 +35,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="container">
+    <div className="t_container">
       
       <div className="inner">
         <h1>Testimonials</h1>

@@ -4,114 +4,137 @@ import '../assets/css/package.css'; // Assuming you have styles.css in the same 
 const PackageSection = () => {
     return (
         <section className="choose-package">
-            <div className="container" style={{ background: 'grey' }}>
-        /*/
-                <div className="divider-45 d-none d-lg-block"></div>
-                <div className="row c-gutter-60" style={{ display: 'flex', justifyContent: 'space-evenly' }}>
-                    <div class="col-lg-4 col-12">
-                        <div class="pricing-plan hero-bg rounded">
-                            <div class="plan-name text-uppercase bg-maincolor">
-                                <h3>
-                                    Bronze
-                                </h3>
-                            </div>
-                            <div class="plan-features">
-                                <ul class="list-bordered" style={{ color: 'grey' }}>
-                                    <li>Normal Photo Shoot </li>
-                                    <li>Including props </li>
-                                    <li>10 Retouched digital images</li>
-                                </ul>
-                            </div>
-                            <div class="price-wrap d-flex">
-                                <span class="plan-sign small-text">Rs</span>
-                                <span class="plan-price color-main2">6000</span>
-                                <span class="plan-decimals small-text">/shoot</span>
-                            </div>
-                            <div class="plan-button">
-                                <a href="#" class="btn btn-maincolor"><span>Book Now</span></a>
-                            </div>
-                        </div>
-                        <div class="divider-45 d-block d-lg-none"></div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="pricing-plan hero-bg rounded">
-                            <div class="plan-name text-uppercase bg-maincolor">
-                                <h3>
-                                    Bronze
-                                </h3>
-                            </div>
-                            <div class="plan-features">
-                                <ul class="list-bordered" style={{ color: 'grey' }}>
-                                    <li>Normal Photo Shoot </li>
-                                    <li>Including props </li>
-                                    <li>10 Retouched digital images</li>
-                                </ul>
-                            </div>
-                            <div class="price-wrap d-flex">
-                                <span class="plan-sign small-text">Rs</span>
-                                <span class="plan-price color-main2">6000</span>
-                                <span class="plan-decimals small-text">/shoot</span>
-                            </div>
-                            <div class="plan-button">
-                                <a href="#" class="btn btn-maincolor"><span>Book Now</span></a>
-                            </div>
-                        </div>
-                        <div class="divider-45 d-block d-lg-none"></div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="pricing-plan hero-bg rounded">
-                            <div class="plan-name text-uppercase bg-maincolor">
-                                <h3>
-                                    Bronze
-                                </h3>
-                            </div>
-                            <div class="plan-features">
-                                <ul class="list-bordered" style={{ color: 'grey' }}>
-                                    <li>Normal Photo Shoot </li>
-                                    <li>Including props </li>
-                                    <li>10 Retouched digital images</li>
-                                </ul>
-                            </div>
-                            <div class="price-wrap d-flex">
-                                <span class="plan-sign small-text">Rs</span>
-                                <span class="plan-price color-main2">6000</span>
-                                <span class="plan-decimals small-text">/shoot</span>
-                            </div>
-                            <div class="plan-button">
-                                <a href="#" class="btn btn-maincolor"><span>Book Now</span></a>
-                            </div>
-                        </div>
-                        <div class="divider-45 d-block d-lg-none"></div>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <div class="pricing-plan hero-bg rounded">
-                            <div class="plan-name text-uppercase bg-maincolor">
-                                <h3>
-                                    Bronze
-                                </h3>
-                            </div>
-                            <div class="plan-features">
-                                <ul class="list-bordered" style={{ color: 'grey' }}>
-                                    <li>Normal Photo Shoot </li>
-                                    <li>Including props </li>
-                                    <li>10 Retouched digital images</li>
-                                </ul>
-                            </div>
-                            <div class="price-wrap d-flex">
-                                <span class="plan-sign small-text">Rs</span>
-                                <span class="plan-price color-main2">6000</span>
-                                <span class="plan-decimals small-text">/shoot</span>
-                            </div>
-                            <div class="plan-button">
-                                <a href="#" class="btn btn-maincolor"><span>Book Now</span></a>
-                            </div>
-                        </div>
-                        <div class="divider-45 d-block d-lg-none"></div>
-                    </div>
-                   </div>
+            <div className="packageContainer">
+            <div className="inner">
+        <h1>Packages</h1>
+        <div className="border"></div>
+        </div>
+
+<div className="divider-45 d-none d-lg-block"></div>
+<div className="row c-gutter-60" style={{ display: 'flex', justifyContent: 'space-evenly'}}>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
+                <h3>
+                    Bronze
+                </h3>
             </div>
-        </section>
-    );
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px"}}>
+                    <li>Normal Photo Shoot </li>
+                    <li>Including props </li>
+                    <li>10 Retouched digital images</li>
+                </ul>
+            </div>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">6000</span>
+                <span class="plan-decimals small-text">/shoot</span>
+            </div>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            </div>
+        </div>
+        <div class="divider-45 d-block d-lg-none"></div>
+    </div>
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
+                <h3>
+                Silver Package
+                </h3>
+            </div>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px" }}>
+                <li>15 Retouched digital images.<br/> (5 x 7 Print)</li>
+                <li>2 theme set up for baby.</li>
+                <li>1 background for family shots</li>
+                <li>1 to 1.5 hour session.</li>
+                <li>parents and siblings included.</li>
+                <li>Makeup Artist for parents</li>
+                <li>(8 x 12) Frame</li>
+                </ul>
+            </div>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">13,000</span>
+                <span class="plan-decimals small-text">/shoot</span>
+            </div>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            </div>
+        </div>
+        <div class="divider-45 d-block d-lg-none"></div>
+    </div>
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
+                <h3>
+                Gold package
+                </h3>
+            </div>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px"}}>
+                    <li>20 Retouched digital images.</li>
+                    <li>3 theme set up for baby. </li>
+                    <li>1 background for family shots</li>
+                    <li>2 hour session.</li>
+                    <li>Indoor + Outdoor photo session </li>
+                    <li>parents and siblings included.</li>
+                    <li>Makeup Artist for parents</li>
+                    <li>Dream Book Album</li>
+                    <li>Sparkle Frame </li>
+                </ul>
+            </div>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">18,000</span>
+                <span class="plan-decimals small-text">/shoot</span>
+            </div>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            </div>
+        </div>
+        <div class="divider-45 d-block d-lg-none"></div>
+    </div>
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
+                <h3>
+                Diamond Package 
+                </h3>
+            </div>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{ height: "450px", width:"250px"}}>
+                    <li>cake smash + theme + family</li>
+                    <li>30 Retouched digital images<br/>(10 from cake smash+15<br/> from theme and family).</li>
+                    <li>1 cake smash + 2 others <br/>set ups for baby.</li>
+                    <li>1 background for family shots</li>
+                    <li>2 hour session.</li>
+                    <li>parents and siblings included.</li>
+                    <li>Makeup Artist for parents</li>
+                    <li>12 x 18 photo book</li>
+                    <li> Wooden frame</li>
+                </ul>
+            </div>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">6000</span>
+                <span class="plan-decimals small-text">/shoot</span>
+            </div>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            </div>
+        </div>
+        <div class="divider-45 d-block d-lg-none"></div>
+    </div>
+   </div>
+</div>
+</section>
+);
 };
 
 export default PackageSection;
