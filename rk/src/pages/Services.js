@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPortrait, faHeart, faRing, faBaby, faBabyCarriage, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPenRuler, faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
 import "../assets/css/services.css"
-
+import Portrait from "./Portrait";
+import Prewedding from "./Prewedding";
+import Weddings from "./Wedding";
+import Maternity from "./Maternity";
+import Babyshoot from "./Babyshoot";
 
 const ServiceSection = () => {
   return (
@@ -18,7 +22,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faPortrait} />
+                <FontAwesomeIcon icon={faPenRuler} />
               </div>
             </div>
             <div className="card__content">
@@ -34,7 +38,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faHeart} />
+                <FontAwesomeIcon icon={faPenRuler} />
               </div>
             </div>
             <div className="card__content">
@@ -50,7 +54,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faRing} />
+                <FontAwesomeIcon icon={faRocket} />
               </div>
             </div>
             <div className="card__content">
@@ -66,7 +70,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faBaby} />
+                <FontAwesomeIcon icon={faRocket} />
               </div>
             </div>
             <div className="card__content">
@@ -82,7 +86,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faBabyCarriage} />
+                <FontAwesomeIcon icon={faRocket} />
               </div>
             </div>
             <div className="card__content">
@@ -98,14 +102,12 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faPhone} />
+                <FontAwesomeIcon icon={faRocket} />
               </div>
             </div>
             <div className="card__content">
-              <h3>Contact Us</h3>
-              <p>+91 8308287358 / 9665179271 </p>
-              <h3>Mail Id</h3>
-              <p>rangkathastudio26@gmail.com</p>
+              <h3>Contact US</h3>
+              <p>+91 ************ </p>
               {/* <Link to="./">Read More</Link> */}
             </div>
           </div>

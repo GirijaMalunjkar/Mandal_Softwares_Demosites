@@ -12,41 +12,41 @@ const PackageSection = () => {
 
 <div className="divider-45 d-none d-lg-block"></div>
 <div className="row c-gutter-60" style={{ display: 'flex', justifyContent: 'space-evenly'}}>
-    <div className="col-lg-4 col-12">
-        <div className="pricing-plan hero-bg rounded">
-            <div className="plan-name text-uppercase bg-maincolor">
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
                 <h3>
                     Bronze
                 </h3>
             </div>
-            <div className="plan-features">
-                <ul className="list-bordered" style={{height: "450px", width:"250px"}}>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px"}}>
                     <li>Normal Photo Shoot </li>
                     <li>Including props </li>
                     <li>10 Retouched digital images</li>
                 </ul>
             </div>
-            <div className="price-wrap d-flex">
-                <span className="plan-sign small-text">Rs</span>
-                <span className="plan-price color-main2">6000</span>
-                <span className="plan-decimals small-text">/shoot</span>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">6000</span>
+                <span class="plan-decimals small-text">/shoot</span>
             </div>
-            <div className="plan-button">
-                <a href="#" className="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
             </div>
         </div>
-        <div className="divider-45 d-block d-lg-none"></div>
+        <div class="divider-45 d-block d-lg-none"></div>
     </div>
-    <div className="divider-20 d-block d-md-none"></div>
-    <div className="col-lg-4 col-12">
-        <div className="pricing-plan hero-bg rounded">
-            <div className="plan-name text-uppercase bg-maincolor">
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
                 <h3>
                 Silver Package
                 </h3>
             </div>
-            <div className="plan-features">
-                <ul className="list-bordered" style={{height: "450px", width:"250px" }}>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px" }}>
                 <li>15 Retouched digital images.<br/> (5 x 7 Print)</li>
                 <li>2 theme set up for baby.</li>
                 <li>1 background for family shots</li>
@@ -56,27 +56,27 @@ const PackageSection = () => {
                 <li>(8 x 12) Frame</li>
                 </ul>
             </div>
-            <div className="price-wrap d-flex">
-                <span className="plan-sign small-text">Rs</span>
-                <span className="plan-price color-main2">13,000</span>
-                <span className="plan-decimals small-text">/shoot</span>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">13,000</span>
+                <span class="plan-decimals small-text">/shoot</span>
             </div>
-            <div className="plan-button">
-                <a href="#" className="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
             </div>
         </div>
-        <div className="divider-45 d-block d-lg-none"></div>
+        <div class="divider-45 d-block d-lg-none"></div>
     </div>
-    <div className="divider-20 d-block d-md-none"></div>
-    <div className="col-lg-4 col-12">
-        <div className="pricing-plan hero-bg rounded">
-            <div className="plan-name text-uppercase bg-maincolor">
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
                 <h3>
                 Gold package
                 </h3>
             </div>
-            <div className="plan-features">
-                <ul className="list-bordered" style={{height: "450px", width:"250px"}}>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{height: "450px", width:"250px"}}>
                     <li>20 Retouched digital images.</li>
                     <li>3 theme set up for baby. </li>
                     <li>1 background for family shots</li>
@@ -88,27 +88,27 @@ const PackageSection = () => {
                     <li>Sparkle Frame </li>
                 </ul>
             </div>
-            <div className="price-wrap d-flex">
-                <span className="plan-sign small-text">Rs</span>
-                <span className="plan-price color-main2">18,000</span>
-                <span className="plan-decimals small-text">/shoot</span>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">18,000</span>
+                <span class="plan-decimals small-text">/shoot</span>
             </div>
-            <div className="plan-button">
-                <a href="#" className="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
             </div>
         </div>
-        <div className="divider-45 d-block d-lg-none"></div>
+        <div class="divider-45 d-block d-lg-none"></div>
     </div>
-    <div className="divider-20 d-block d-md-none"></div>
-    <div className="col-lg-4 col-12">
-        <div className="pricing-plan hero-bg rounded">
-            <div className="plan-name text-uppercase bg-maincolor">
+    <div class="divider-20 d-block d-md-none"></div>
+    <div class="col-lg-4 col-12">
+        <div class="pricing-plan hero-bg rounded">
+            <div class="plan-name text-uppercase bg-maincolor">
                 <h3>
                 Diamond Package 
                 </h3>
             </div>
-            <div className="plan-features">
-                <ul className="list-bordered" style={{ height: "450px", width:"250px"}}>
+            <div class="plan-features">
+                <ul class="list-bordered" style={{ height: "450px", width:"250px"}}>
                     <li>cake smash + theme + family</li>
                     <li>30 Retouched digital images<br/>(10 from cake smash+15<br/> from theme and family).</li>
                     <li>1 cake smash + 2 others <br/>set ups for baby.</li>
@@ -120,16 +120,16 @@ const PackageSection = () => {
                     <li> Wooden frame</li>
                 </ul>
             </div>
-            <div className="price-wrap d-flex">
-                <span className="plan-sign small-text">Rs</span>
-                <span className="plan-price color-main2">6000</span>
-                <span className="plan-decimals small-text">/shoot</span>
+            <div class="price-wrap d-flex">
+                <span class="plan-sign small-text">Rs</span>
+                <span class="plan-price color-main2">6000</span>
+                <span class="plan-decimals small-text">/shoot</span>
             </div>
-            <div className="plan-button">
-                <a href="#" className="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
+            <div class="plan-button">
+                <a href="#" class="btn btn-maincolor" style={{padding:"20px"}}><span>Book Now</span></a>
             </div>
         </div>
-        <div className="divider-45 d-block d-lg-none"></div>
+        <div class="divider-45 d-block d-lg-none"></div>
     </div>
    </div>
 </div>

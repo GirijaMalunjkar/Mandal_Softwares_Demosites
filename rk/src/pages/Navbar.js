@@ -80,7 +80,7 @@ export default function Navbar() {
                             </li>
                             <li>
                                 
-                               <Link to="./Contact"><button className="button-34"  role="button">Registration</button></Link>
+                               <Link to="./Contact"><button class="button-34"  role="button">Registration</button></Link>
 
                             </li>
 
