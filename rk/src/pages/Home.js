@@ -3,25 +3,26 @@ import About from "./About";
 import Services from "./Services";
 import Testimonial from "./Testimonial";
 import Packages from "./Package";
-import ContactForm from "./Contact";
 
 export function Home() {
-    return (
-        <>
-            <section id="portfolioHeader">
-                <div className="headerContainer">
-                    <div className="headerText" style={{ color: "white" }}>
-                        <p>Photographer</p>
-                        <h1><span>RANG</span>KATHA</h1>
-                    </div>
-                </div>
-            </section>
-            <About />
-            <Services />
-            <Packages />
-            <Testimonial />
-            {/* <ContactForm /> */}
-        </>
-    )
+  return (
+    <>
+      <section id="portfolioHeader">
+        <div className="headerContainer">
+          <div className="headerText" style={{ color: "white" }}>
+            <h1>
+              <span>RANG</span>KATHA
+            </h1>
+            <p>Photo Studio</p>
+          </div>
+          <p className="know-more-text">Know More</p>
+        </div>
+      </section>
+      <About id="about" />
+      <Services />
+      <Packages />
+      <Testimonial />
+    </>
+  );
 }
 export default Home;

@@ -1,13 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenRuler, faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
-import "../assets/css/services.css"
-import Portrait from "./Portrait";
-import Prewedding from "./Prewedding";
-import Weddings from "./Wedding";
-import Maternity from "./Maternity";
-import Babyshoot from "./Babyshoot";
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhone,
+  faBabyCarriage,
+  faBaby,
+  faRing,
+  faHeart,
+  faPortrait,
+} from "@fortawesome/free-solid-svg-icons";
+import "../assets/css/services.css";
 
 const ServiceSection = () => {
   return (
@@ -22,12 +24,15 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faPenRuler} />
+                <FontAwesomeIcon icon={faPortrait} />
               </div>
             </div>
             <div className="card__content">
               <h3>PORTRAIT</h3>
-              <p>Discover the art of you through our captivating portrait photoshoots.</p>
+              <p>
+                Discover the art of you through our captivating portrait
+                photoshoots.
+              </p>
               <Link to="./Portrait">Read More</Link>
             </div>
           </div>
@@ -38,12 +43,15 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faPenRuler} />
+                <FontAwesomeIcon icon={faHeart} />
               </div>
             </div>
             <div className="card__content">
               <h3>PRE-WEDDINGS</h3>
-              <p>Cherish the moments before the 'I do' with our enchanting pre-wedding photography.</p>
+              <p>
+                Cherish the moments before the 'I do' with our enchanting
+                pre-wedding photography.
+              </p>
               <Link to="./Prewedding">Read More</Link>
             </div>
           </div>
@@ -54,12 +62,15 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faRocket} />
+                <FontAwesomeIcon icon={faRing} />
               </div>
             </div>
             <div className="card__content">
               <h3>WEDDINGS</h3>
-              <p>Capture the timeless love story of your special day with our exquisite wedding photography.</p>
+              <p>
+                Capture the timeless love story of your special day with our
+                exquisite wedding photography.
+              </p>
               <Link to="./Wedding">Read More</Link>
             </div>
           </div>
@@ -70,12 +81,15 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faRocket} />
+                <FontAwesomeIcon icon={faBaby} />
               </div>
             </div>
             <div className="card__content">
               <h3>MATERNITY</h3>
-              <p>Embrace the beauty of motherhood with our tender and timeless maternity photoshoots.</p>
+              <p>
+                Embrace the beauty of motherhood with our tender and timeless
+                maternity photoshoots.
+              </p>
               <Link to="./Maternity">Read More</Link>
             </div>
           </div>
@@ -86,12 +100,15 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faRocket} />
+                <FontAwesomeIcon icon={faBabyCarriage} />
               </div>
             </div>
             <div className="card__content">
               <h3>BABY SHOOT</h3>
-              <p>Celebrate the joy of new beginnings with our heartwarming baby photoshoots.</p>
+              <p>
+                Celebrate the joy of new beginnings with our heartwarming baby
+                photoshoots.
+              </p>
               <Link to="./Babyshoot">Read More</Link>
             </div>
           </div>
@@ -102,7 +119,7 @@ const ServiceSection = () => {
           <div className="card__data">
             <div className="card__icon">
               <div className="card__icon-bx">
-                <FontAwesomeIcon icon={faRocket} />
+                <FontAwesomeIcon icon={faPhone} />
               </div>
             </div>
             <div className="card__content">
@@ -112,10 +129,7 @@ const ServiceSection = () => {
             </div>
           </div>
         </div>
-
-
       </section>
-
     </section>
   );
 };

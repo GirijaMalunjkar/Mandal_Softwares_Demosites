@@ -392,3 +392,16 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   transform: translateY(10px);
 }
+
+@media screen and (max-width: 768px) {
+  .headerText h1 {
+    font-size: 86px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .headerText h1 {
+    font-size: 60px; /* Adjust font size for even smaller screens */
+  }
+}

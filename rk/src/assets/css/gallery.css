@@ -23,3 +23,28 @@
 .gallery.pics:hover {
     filter: opacity(.10);
 }
+
+.galleryTempImg {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    width: 100vw;
+    padding: 0;
+    background: #000000a1;
+}
+
+.galleryTempImg img {
+    height: 90%;
+    width: auto;
+    padding: 5%;
+}
+
+
+@media screen and (max-width: 800px) {
+
+.gallery {
+    column-count: unset;
+}
+}
